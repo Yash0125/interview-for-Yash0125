@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
-import './LaunchModal.css';
+import "./LaunchModal.css";
 
 Modal.setAppElement("#root");
 

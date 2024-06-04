@@ -2,6 +2,7 @@ import React from 'react';
 import './LaunchList.css';
 
 const LaunchList = ({ launches, onLaunchSelect} ) => {
+  console.log("launches",launches);
   return (
     <div className='launchlist-container'>
       <div className="launch-list">
