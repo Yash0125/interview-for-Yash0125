@@ -32,13 +32,7 @@ function Pagination({ currentPage, totalItems, itemsPerPage, onPageChange }) {
 
   return (
     <div className="pagination">
-      {/* <button onClick={handlePrevious} disabled={currentPage === 1}>
-      <FaAngleLeft/>
-      </button> */}
-      {/* <span>
-        Page {currentPage} of {totalPages}
-      </span> */}
-      <div style={{ display: "flex", flexDirection: "row", margin: 0 }}>
+      <div className="pagination-btn-container">
         <button onClick={handlePrevious} disabled={currentPage === 1}>
           <FaAngleLeft />
         </button>
@@ -55,10 +49,6 @@ function Pagination({ currentPage, totalItems, itemsPerPage, onPageChange }) {
           <FaAngleRight />
         </button>
       </div>
-      {/* <button onClick={handleNext} disabled={currentPage === totalPages}>
-      
-      <FaAngleRight/>
-      </button> */}
     </div>
   );
 }

@@ -102,6 +102,7 @@ function App() {
           <LaunchModal
             launch={selectedLaunch}
             onRequestClose={() => setSelectedLaunch(null)}
+            filter={filter}
           />
         )}
       </div>
