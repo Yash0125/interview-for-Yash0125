@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import LaunchList from "./components/LaunchList/LaunchList";
 import axios from "axios";
+import LaunchModal from "./components/LaunchModal/LaunchModal";
 
 function App() {
   const [launches, setLaunches] = useState([]);
@@ -39,11 +40,16 @@ function App() {
           <div className="filters-left-container">Last 6 Months</div>
           <div className="filters-right-container">all Launches</div>
         </div>
-        <LaunchList 
-        launches={filteredLaunches}
-        
-         onLaunchSelect={setSelectedLaunch}
-         />
+        <LaunchList
+          launches={filteredLaunches}
+          onLaunchSelect={setSelectedLaunch}
+        />
+        {selectedLaunch && (
+          <LaunchModal
+            launch={selectedLaunch}
+            onRequestClose={() => setSelectedLaunch(null)}
+          />
+        )}
       </div>
     </div>
   );

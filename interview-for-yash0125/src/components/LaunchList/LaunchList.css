@@ -1,3 +1,11 @@
 .launchlist-container{
     
 }
+
+.launch-table-container{
+    width: 70vw;
+}
+
+thead{
+    background-color: #ccc;
+}

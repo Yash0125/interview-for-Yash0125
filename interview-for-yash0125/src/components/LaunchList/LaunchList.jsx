@@ -5,7 +5,7 @@ const LaunchList = ({ launches, onLaunchSelect} ) => {
   return (
     <div className='launchlist-container'>
       <div className="launch-list">
-      <table>
+      <table className='launch-table-container'>
         <thead>
           <tr>
             <th>No.</th>
