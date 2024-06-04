@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import './Pagination.css';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import "./Pagination.css";
 
 function Pagination({ currentPage, totalItems, itemsPerPage, onPageChange }) {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -31,13 +32,16 @@ function Pagination({ currentPage, totalItems, itemsPerPage, onPageChange }) {
 
   return (
     <div className="pagination">
-      <button onClick={handlePrevious} disabled={currentPage === 1}>
-        Previous
-      </button>
-      <span>
+      {/* <button onClick={handlePrevious} disabled={currentPage === 1}>
+      <FaAngleLeft/>
+      </button> */}
+      {/* <span>
         Page {currentPage} of {totalPages}
-      </span>
+      </span> */}
       <div style={{ display: "flex", flexDirection: "row", margin: 0 }}>
+        <button onClick={handlePrevious} disabled={currentPage === 1}>
+          <FaAngleLeft />
+        </button>
         {pageNumbers.map((page) => (
           <button
             key={page}
@@ -47,10 +51,14 @@ function Pagination({ currentPage, totalItems, itemsPerPage, onPageChange }) {
             {page}
           </button>
         ))}
+        <button onClick={handleNext} disabled={currentPage === totalPages}>
+          <FaAngleRight />
+        </button>
       </div>
-      <button onClick={handleNext} disabled={currentPage === totalPages}>
-        Next
-      </button>
+      {/* <button onClick={handleNext} disabled={currentPage === totalPages}>
+      
+      <FaAngleRight/>
+      </button> */}
     </div>
   );
 }
