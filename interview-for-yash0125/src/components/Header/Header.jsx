@@ -5,7 +5,7 @@ import Logo from "./../../assets/logo.png"
 const Header = () => {
   return (
     <div className='header-container'>
-      <img src={Logo} alt="SpaceX-logo" />
+      <img className='header-img' src={Logo} alt="SpaceX-logo" />
     </div>
   )
 }
