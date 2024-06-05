@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.body-container{
+    width: 70vw;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    margin:2rem auto;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.filter-select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 4px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .filter-icon {
+    margin-right: 8px;
+    font-size: 1.5em;
   }
-  to {
-    transform: rotate(360deg);
+  
+  select {
+    padding: 5px;
+    font-size: 1em;
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    
   }
-}
+
+  .select option:hover {
+    background-color: lightgray;
+    
+  }
+
+  .time-range-modal-trigger{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .date-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }

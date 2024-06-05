@@ -1,0 +1,129 @@
+.launch-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .launch-modal-header{
+    display: flex;
+    /* flex-direction: row;
+    gap: 10px; */
+    justify-content: space-between;
+  }
+  .launch-modal-header-left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .launch-modal-header-right{
+    display: flex;justify-content: top;
+    align-items: top;
+  }
+
+  .close-icon{
+    height: 20px;
+    width: 20px;
+    color: #4B5563;
+    cursor: pointer;
+  }
+
+  .launch-modal-img{
+    height: 72px;
+    width: 72px;
+    object-fit: cover;
+
+}
+
+.launch-modal-header-details{
+    display: flex;
+    flex-direction: column;
+    gap:8px
+}
+
+.launch-modal-header-details h2{
+    margin: 0;padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #1F2937;
+    font-weight: 500;
+
+}
+.launch-modal-header-details h3{
+    margin: 0;padding: 0;
+    font-weight: 400;
+    color: #374151;
+    font-size: 12px;
+    line-height: 12px;
+
+}
+
+.launch-header-icon-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.launch-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.wikipedia-link{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.launch-modal-desc-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.launch-modal-desc-wiki-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.launch-modal-bottom-details{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.launch-modal-bottom-details-left{
+    width: 30%;
+}
+
+.launch-modal-bottom-details-left-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #4B5563;
+}
+.launch-modal-bottom-details-left-right{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #1F2937;
+}
+
+.launch-modal-bottom-details-right{
+
+}
+
+.line{
+    color: #E4E4E7;
+    margin: 0;
+    padding: 0;
+}
