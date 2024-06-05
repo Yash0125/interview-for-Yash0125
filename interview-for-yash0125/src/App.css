@@ -35,4 +35,24 @@
     border-radius: 4px;
     outline: none;
     border: none;
+    
+  }
+
+  .select option:hover {
+    background-color: lightgray;
+    
+  }
+
+  .time-range-modal-trigger{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .date-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
   }

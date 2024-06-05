@@ -1,0 +1,42 @@
+.time-range-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    width: 80%;
+    padding: 2rem;
+    outline: none;
+}
+
+.time-range-options{
+    padding-right: 5px;
+    border-right:1px solid #ccc;
+    width: 150px;
+}
+
+.time-range-options p{
+    cursor: pointer;
+}
+
+.date-select-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.date-picker-container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.time-range-modal-header{
+    display: flex;
+    justify-content: flex-end;
+}
